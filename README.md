@@ -2,6 +2,8 @@
 
 An unofficial MCP-first skill for using [Karakeep](https://karakeep.app) with AI agents.
 
+![Karakeep MCP-First Skill video thumbnail](assets/karakeep-mcp-first-video.jpg)
+
 This skill tells the agent to prefer Karakeep's official MCP server for normal bookmark/list/tag/content operations, while keeping the Karakeep CLI and direct API access as narrow fallbacks for unsupported actions, bulk work, debugging, raw verification, and highlight creation.
 
 It was created for the YouTube video: [I Gave My AI Agent Access to 400+ Karakeep Bookmarks. Then This Happened](https://youtu.be/WQNhRyYyl64).
@@ -19,19 +21,37 @@ That makes the skill a better fit for agent workflows where MCP is the most stru
 
 ## Install
 
-Copy this folder into your skills directory:
+Download or clone this repo, then copy the whole folder into the skill folder for the agent you use.
+
+```bash
+git clone https://github.com/thethomasjfellows/karakeep-mcp-first-skill.git
+```
+
+### OpenClaw
 
 ```bash
 cp -R karakeep-mcp-first-skill ~/.agents/skills/karakeep-mcp-first
 ```
 
-For Codex-style skills, you can also copy it to:
+### Claude Code
+
+```bash
+cp -R karakeep-mcp-first-skill ~/.claude/skills/karakeep-mcp-first
+```
+
+### Codex
 
 ```bash
 cp -R karakeep-mcp-first-skill ~/.codex/skills/karakeep-mcp-first
 ```
 
-Then restart your agent/session so it reloads available skills.
+Then restart your agent or open a new session so it reloads available skills.
+
+Use it by asking for the skill by name:
+
+```text
+Use the Karakeep MCP-First skill to search my Karakeep bookmarks for banana bread recipes.
+```
 
 ## Requirements
 
@@ -52,6 +72,15 @@ export KARAKEEP_SERVER_ADDR="https://your-karakeep.example.com"
 ```
 
 Avoid committing real API keys or local server details into this repo or any public skill.
+
+## Simple Setup Checklist
+
+1. Install and run Karakeep.
+2. Create a Karakeep API key.
+3. Configure the Karakeep MCP server in your agent.
+4. Copy this skill folder into your agent's skills directory.
+5. Restart the agent.
+6. Ask the agent to use `karakeep-mcp-first`.
 
 ## Related Links
 
