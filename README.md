@@ -19,25 +19,35 @@ That makes the skill a better fit for agent workflows where MCP is the most stru
 
 ## Install
 
+### Option 1: ClawHub
+
+```bash
+clawhub install karakeep-mcp-first
+```
+
+Then restart your agent or open a new session so it reloads available skills.
+
+### Option 2: GitHub
+
 Download or clone this repo, then copy the whole folder into the skill folder for the agent you use.
 
 ```bash
 git clone https://github.com/thethomasjfellows/karakeep-mcp-first-skill.git
 ```
 
-### OpenClaw
+OpenClaw:
 
 ```bash
 cp -R karakeep-mcp-first-skill ~/.agents/skills/karakeep-mcp-first
 ```
 
-### Claude Code
+Claude Code:
 
 ```bash
 cp -R karakeep-mcp-first-skill ~/.claude/skills/karakeep-mcp-first
 ```
 
-### Codex
+Codex:
 
 ```bash
 cp -R karakeep-mcp-first-skill ~/.codex/skills/karakeep-mcp-first
@@ -82,6 +92,7 @@ Avoid committing real API keys or local server details into this repo or any pub
 
 ## Related Links
 
+- ClawHub listing: https://clawhub.ai/thethomasjfellows/karakeep-mcp-first
 - Video walkthrough: https://youtu.be/WQNhRyYyl64
 - Karakeep: https://karakeep.app
 - Karakeep docs: https://docs.karakeep.app
