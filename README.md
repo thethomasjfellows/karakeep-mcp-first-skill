@@ -2,8 +2,6 @@
 
 An unofficial MCP-first skill for using [Karakeep](https://karakeep.app) with AI agents.
 
-![Karakeep MCP-First Skill video thumbnail](assets/karakeep-mcp-first-video.jpg)
-
 This skill tells the agent to prefer Karakeep's official MCP server for normal bookmark/list/tag/content operations, while keeping the Karakeep CLI and direct API access as narrow fallbacks for unsupported actions, bulk work, debugging, raw verification, and highlight creation.
 
 It was created for the YouTube video: [I Gave My AI Agent Access to 400+ Karakeep Bookmarks. Then This Happened](https://youtu.be/WQNhRyYyl64).
@@ -89,6 +87,10 @@ Avoid committing real API keys or local server details into this repo or any pub
 - Karakeep docs: https://docs.karakeep.app
 - Karakeep GitHub: https://github.com/karakeep-app/karakeep
 - Karakeep MCP package: https://www.npmjs.com/package/@karakeep/mcp
+
+<a href="https://youtu.be/WQNhRyYyl64">
+  <img src="assets/karakeep-mcp-first-video.jpg" alt="Video walkthrough thumbnail" width="280">
+</a>
 
 ## Status
 
